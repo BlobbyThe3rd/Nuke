@@ -21,11 +21,15 @@
       left: 50%;
       position: relative;
       transition: width 2s, height 2s, transform 2s;
+      background-color: black;
+      color: white;
     }
     .nuke:hover {
       hight: 500px;
       width: 500px;
       transform: rotate(360deg);
+      color: black;
+      background-color: white;
   </style>
 </head>
 
@@ -39,7 +43,7 @@
   <h1 style="color:dodgerblue;text-align:center">
     Welcome To WeLaunchNukes
   </h1>
-  <button class=" button nuke" onclick="bob()" style="color:white;background-color:black;position:center;width:100px;height:100px;">
+  <button class=" button nuke" onclick="bob()" style="position:center;width:100px;height:100px;">
    Launch Nuke
   </button>
   <script>
