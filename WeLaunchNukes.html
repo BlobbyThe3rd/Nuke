@@ -14,38 +14,18 @@
       width: 100%;
       transform: translate(-02%, -00%);
     }
-
-    .center2 {
-      margin: 0;
-      position: absolute;
-      top: 130px;
-      left: 211px;
-      transform: translate(-50%, -50%);
+    .nuke {
+      width: 100px;
+      hight: 100px;
+      top: 50%;
+      left: 50%;
+      position: relative;
+      transition: width 2s, height 2s, transform 2s;
     }
-
-    .backgrounds {
-      margin: 0;
-      position: absolute;
-      top: 215px;
-      left: 100px;
-      transform: translate(-50%, -50%);
-    }
-
-    .buttons {
-      margin: 0;
-      position: absolute;
-      top: 207.5px;
-      left: 242.5px;
-      transform: translate(-50%, -50%);
-    }
-
-    .sounds {
-      margin: 0;
-      position: absolute;
-      top: 253px;
-      left: 380px;
-      transform: translate(-50%, -50%);
-    }
+    .nuke:hover {
+      hight: 500px;
+      width: 500px;
+      transform: rotate(360deg);
   </style>
 </head>
 
@@ -59,7 +39,7 @@
   <h1 style="color:dodgerblue;text-align:center">
     Welcome To WeLaunchNukes
   </h1>
-  <button onclick="bob()" style="color:white;background-color:black">
+  <button class=" button nuke" onclick="bob()" style="color:white;background-color:black;position:center;width:100px;height:100px;">
    Launch Nuke
   </button>
   <script>
